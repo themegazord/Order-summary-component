@@ -1,0 +1,168 @@
+:root {
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-btn-hover: #766CF1;
+
+    --font-red-hat-display: 'Red Hat Display', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-pale-blue);
+    background-image: url('../../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+@media screen and (max-width: 450px) {
+
+    body {
+        background-image: url('../../images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+
+    .content {
+        width: 350px;
+    }
+    
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--neutral-white);
+    gap: 3rem;
+}
+
+.img__content {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.title__content {
+    font-family: var(--font-red-hat-display);
+    font-style: normal;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.description__content {
+    font-family: var(--font-red-hat-display);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--neutral-desaturated-blue);
+}
+
+.finnancial__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #F8F9FE;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.img_info__finnancial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info__finnancial_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.title_plan {
+    font-family: var(--font-red-hat-display);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.price_plan {
+    font-family: var(--font-red-hat-display);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--neutral-desaturated-blue);
+}
+
+.change__finnancial_content {
+    font-family: var(--font-red-hat-display);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.btn__content {
+    width: 75%;
+    padding: 1rem;
+    border-radius: 10px;
+    background: var(--primary-bright-blue);
+    color: var(--neutral-very-pale-blue);
+    font-family: var(--font-red-hat-display);
+    font-size: normal;
+    font-weight: 700;
+    font-size: 1.5;
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-shadow: 0 10px 25px var(--neutral-desaturated-blue);
+}
+
+.btn__content:hover{
+    background: var(--neutral-btn-hover);
+}
+
+.change__finnancial_content:hover{
+    color: var(--neutral-btn-hover);
+    text-decoration: none;
+}
+
+.cancel_order__content {
+    text-decoration: none;
+    font-family: var(--font-red-hat-display);
+    font-size: normal;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--neutral-desaturated-blue);
+    padding-bottom: 5rem;
+}
+
+.cancel_order__content:hover{
+    color: black;
+}
