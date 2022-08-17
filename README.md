@@ -1,5 +1,7 @@
 # Frontend Mentor - Order summary card
 
+# Live: https://eloquent-cobbler-318792.netlify.app
+
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
